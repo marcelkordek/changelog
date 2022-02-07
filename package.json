@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/marcelkordek/changelog#readme",
   "devDependencies": {
+    "auto-changelog": "^2.4.0",
     "standard-version": "^9.3.2"
   }
 }
