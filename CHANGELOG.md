@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.19](https://github.com/marcelkordek/changelog/compare/v1.0.18...v1.0.19) (2022-02-07)
+
+
+### Bug Fixes
+
+* remove v ([e04614a](https://github.com/marcelkordek/changelog/commit/e04614a53f1236bca5173e2554b5e66b86dd2713))
+
 ### [1.0.18](https://github.com/marcelkordek/changelog/compare/v1.0.17...v1.0.18) (2022-02-07)
 
 ## [1.0.6](https://github.com/marcelkordek/changelog/compare/1.0.5...1.0.6) - 2022-02-07
