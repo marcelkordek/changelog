@@ -1,0 +1,30 @@
+{
+  "name": "changelog",
+  "version": "1.0.0",
+  "description": "Changelog - Release test",
+  "main": "index.js",
+  "scripts": {
+    "push": "git push --follow-tags",
+    "push:version": "npm version patch && npm run push",
+    "publish:patch": "npm version patch && npm run push && npm publish",
+    "publish:minor": "npm version minor && npm run push && npm publish",
+    "publish:major": "npm version major && npm run push && npm publish",
+    "publish:beta": "npm version prerelease --preid beta && npm run push && npm publish --tag=beta",
+    "version": "auto-changelog -p -u -t keepachangelog && git add CHANGELOG.md && git push --tags",
+    "changelog": "auto-changelog -p -u -t keepachangelog",
+    "prepush": "npm run version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelkordek/changelog.git"
+  },
+  "author": "Marcel Kordek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcelkordek/changelog/issues"
+  },
+  "homepage": "https://github.com/marcelkordek/changelog#readme",
+  "devDependencies": {
+    "auto-changelog": "^2.4.0"
+  }
+}
