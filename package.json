@@ -10,7 +10,7 @@
     "publish:minor": "npm version minor && npm run push",
     "publish:major": "npm version major && npm run push",
     "publish:beta": "npm version prerelease --preid beta && npm run push",
-    "version": "auto-changelog -p -u -t keepachangelog --tag-prefix [] && git add CHANGELOG.md",
+    "version": "auto-changelog -p -u -t keepachangelog && git add CHANGELOG.md",
     "changelog": "auto-changelog -p -u -t keepachangelog"
   },
   "repository": {
