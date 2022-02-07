@@ -1,6 +1,6 @@
 {
   "name": "changelog",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "Changelog - Release test",
   "main": "index.js",
   "scripts": {
