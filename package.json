@@ -1,6 +1,6 @@
 {
   "name": "changelog",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "Changelog - Release test",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,8 @@
     "publish:major": "npm version major && npm run push",
     "publish:beta": "npm version prerelease --preid beta && npm run push",
     "version": "auto-changelog -p -u -t keepachangelog --tag-prefix [v] && git add CHANGELOG.md",
-    "changelog": "auto-changelog -p -u -t keepachangelog"
+    "changelog": "auto-changelog -p -u -t keepachangelog",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/marcelkordek/changelog/issues"
   },
-  "homepage": "https://github.com/marcelkordek/changelog#readme"
+  "homepage": "https://github.com/marcelkordek/changelog#readme",
+  "devDependencies": {
+    "standard-version": "^9.3.2"
+  }
 }
