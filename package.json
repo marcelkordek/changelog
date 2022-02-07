@@ -5,14 +5,13 @@
   "main": "index.js",
   "scripts": {
     "push": "git push --follow-tags",
-    "push:version": "npm version patch",
+    "push:version": "npm version patch && npm run push",
     "publish:patch": "npm version patch && npm run push",
     "publish:minor": "npm version minor && npm run push",
     "publish:major": "npm version major && npm run push",
     "publish:beta": "npm version prerelease --preid beta && npm run push",
     "version": "auto-changelog -p -u -t keepachangelog && git add CHANGELOG.md",
-    "changelog": "auto-changelog -p -u -t keepachangelog",
-    "prepush": "npm run version"
+    "changelog": "auto-changelog -p -u -t keepachangelog"
   },
   "repository": {
     "type": "git",
