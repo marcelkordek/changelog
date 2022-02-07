@@ -1,6 +1,6 @@
 {
   "name": "changelog",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "Changelog - Release test",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "publish:beta": "npm version prerelease --preid beta && npm run push",
     "version": "auto-changelog -p -u -t keepachangelog --tag-prefix [v] && git add CHANGELOG.md",
     "changelog": "auto-changelog -p -u -t keepachangelog",
-    "release": "standard-version"
+    "release": "standard-version -t ''"
   },
   "repository": {
     "type": "git",
