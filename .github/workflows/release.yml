@@ -1,9 +1,9 @@
-name: release
+name: tagged-release
 
 on:
   push:
     tags:
-      - "*"
+      - "v*"
 
 jobs:
   build:
@@ -12,11 +12,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Release
-        uses: docker://antonyurchenko/git-release:latest
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CHANGELOG_FILE: "CHANGELOG.md"
-          ALLOW_EMPTY_CHANGELOG: "false"
+      - name: tagged-release
+        uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          args: build/*.zip
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
